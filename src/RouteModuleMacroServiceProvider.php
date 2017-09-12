@@ -10,13 +10,13 @@ class RouteModuleMacroServiceProvider extends ServiceProvider
     public function register()
     {
         if (!Router::hasMacro('module')) {
-            $this->registerMacro(app(Router::class));
+            $this->registerMacro();
         }
     }
 
-    private function registerMacro(Router $router)
+    private function registerMacro()
     {
-        $router->macro('module', function ($module, $only = [], $options = []) use ($router) {
+        Router::macro('module', function ($module, $only = [], $options = []) {
             $onlyOptions = count($only) ? ['only' => $only] : [];
 
             $controllerNameArray = collect(explode('.', $module))->map(function ($name) {
@@ -29,7 +29,7 @@ class RouteModuleMacroServiceProvider extends ServiceProvider
                 return str_singular($name);
             })->push($lastName)->push('Controller')->implode('');
 
-            $router->resource($module, $controllerName, array_merge($onlyOptions, $options));
+            Router::resource($module, $controllerName, array_merge($onlyOptions, $options));
         });
     }
 }
