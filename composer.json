@@ -1,0 +1,55 @@
+{
+  "name": "thejawker/laravel-route-module-macro",
+  "description": "Exposes a module concept to enforce a CRUD and Restful way of routing and naming convention.",
+  "keywords": [
+    "thejawker",
+    "route-module",
+    "laravel-route-module-macro"
+  ],
+  "homepage": "https://github.com/thejawker/laravel-route-module-macro",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bram Veerman",
+      "email": "bram.veerman@gmail.com",
+      "homepage": "https://github.com/thejawker",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "illuminate/support": "~5.5.0",
+    "illuminate/validation": "~5.5.0",
+    "illuminate/pagination": "~5.5.0",
+    "illuminate/view": "~5.5.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "^0.9.5",
+    "orchestra/database": "~3.5.0",
+    "orchestra/testbench": "~3.5.0",
+    "phpunit/phpunit": "^6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "TheJawker\\RouteModuleMacro\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TheJawker\\RouteModuleMacro\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "TheJawker\\RouteModuleMacro\\RouteModuleMacroServiceProvider"
+      ]
+    }
+  }
+}

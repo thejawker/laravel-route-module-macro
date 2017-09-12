@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1505227329">
+  <project timestamp="1505227329">
+    <package name="TheJawker\RouteModuleMacro">
+      <file name="/Users/thejawker/Dev/Misc/laravel-route-module-macro/src/RouteModuleMacroServiceProvider.php">
+        <class name="RouteModuleMacroServiceProvider" namespace="TheJawker\RouteModuleMacro">
+          <metrics complexity="8" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="12" coveredelements="0"/>
+        </class>
+        <line num="10" type="method" name="register" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="12" type="stmt" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="15" type="stmt" count="0"/>
+        <line num="19" type="method" name="anonymousFunction:19#98" complexity="2" crap="6" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="22" type="method" name="anonymousFunction:22#170" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="28" type="method" name="anonymousFunction:28#209" complexity="1" crap="2" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <metrics loc="34" ncloc="34" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="13" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="1" loc="34" ncloc="34" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="13" coveredelements="0"/>
+  </project>
+</coverage>
