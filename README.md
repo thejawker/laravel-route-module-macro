@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/thejawker/laravel-route-module-macro.svg?style=flat-square)](https://scrutinizer-ci.com/g/thejawker/laravel-route-module-macro)
 [![Total Downloads](https://img.shields.io/packagist/dt/thejawker/laravel-route-module-macro.svg?style=flat-square)](https://packagist.org/packages/thejawker/laravel-route-module-macro)
 
-This package works with Laravel 5.5. It is very inspired by the great [Freek Murze](https://twitter.com/freekmurze) with their [Blender Package](https://github.com/spatie/blender/blob/master/app/Providers/RouteServiceProvider.php), where he has a Macro for a module.
+This package works with Laravel 5.5. It is very much inspired by the great [Freek Murze](https://twitter.com/freekmurze) with their [Blender Package](https://github.com/spatie/blender/blob/master/app/Providers/RouteServiceProvider.php), where he has a Macro for a module.
 This really resonates with the CRUD/Restful approach on routing.
 
 ## Installation
@@ -20,7 +20,8 @@ As of Laravel 5.5 it will magically register the package.
 
 ## Usage
 
-You can add `Route::module('name')` in any of your routes files.
+You can add `Route::module('name', ['only'](optional), ['options](optional))` in any of your routes files. 
+The second parameter will allow you to `only` use specific actions, and the third being general options. Refer to the [Laravel docs](https://laravel.com/docs/5.4/controllers#resource-controllers) for those.  
 
 ### Examples:
 
@@ -60,7 +61,7 @@ $ php artisan route:list
 +-----------+-----------------------------------------+---------------+----------------------------------------------------------------------------+
 ```
 
-#### Nested Resource
+#### Nested Resources
 This will enforce you to write Controllers that make sense. A nested `users.posts` will require you to create a UserPostsController with the required actions.
 routes/api.php
 ```php
