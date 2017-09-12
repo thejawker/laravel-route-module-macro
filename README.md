@@ -15,7 +15,7 @@ Require the package from Composer:
 composer require spatie/laravel-collection-macros
 ```
 
-As of Laravel 5.5 it will magically 
+As of Laravel 5.5 it will magically register the package.
 
 
 ## Test
