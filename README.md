@@ -12,7 +12,7 @@ This package works with Laravel 5.5.
 Require the package from Composer:
 
 ``` bash
-composer require spatie/laravel-collection-macros
+composer require thejawker/laravel-route-module-macro
 ```
 
 As of Laravel 5.5 it will magically register the package.
