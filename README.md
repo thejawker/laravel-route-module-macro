@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/thejawker/laravel-route-module-macro.svg?style=flat-square)](https://scrutinizer-ci.com/g/thejawker/laravel-route-module-macro)
 [![Total Downloads](https://img.shields.io/packagist/dt/thejawker/laravel-route-module-macro.svg?style=flat-square)](https://packagist.org/packages/thejawker/laravel-route-module-macro)
 
-This package works with Laravel 5.5. It is very much inspired by the great [Freek Murze](https://twitter.com/freekmurze) with their [Blender Package](https://github.com/spatie/blender/blob/master/app/Providers/RouteServiceProvider.php), where he has a Macro for a module.
+This package works with Laravel 5.5. It is very much inspired by the great [Freek van der Herten](https://twitter.com/freekmurze) with their [Blender Package](https://github.com/spatie/blender/blob/master/app/Providers/RouteServiceProvider.php), where he has a Macro for a module.
 This really resonates with the CRUD/Restful approach on routing.
 
 ## Installation
