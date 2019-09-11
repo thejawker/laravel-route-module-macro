@@ -2,6 +2,7 @@
 
 namespace TheJawker\RouteModuleMacro;
 
+use Illuminate\Support\Str;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 
@@ -20,13 +21,13 @@ class RouteModuleMacroServiceProvider extends ServiceProvider
             $onlyOptions = count($only) ? ['only' => $only] : [];
 
             $controllerNameArray = collect(explode('.', $module))->map(function ($name) {
-                return studly_case($name);
+                return Str::studly($name);
             });
 
             $lastName = $controllerNameArray->pop();
 
             $controllerName = $controllerNameArray->map(function ($name) {
-                return str_singular($name);
+                return Str::singular($name);
             })->push($lastName)->push('Controller')->implode('');
 
             Router::resource($module, $controllerName, array_merge($onlyOptions, $options));
